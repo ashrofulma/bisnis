@@ -7,8 +7,8 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 import Beranda from './pages/Beranda';
 import login from './pages/Login';
-import register from './pages/Register';
-import splash from './pages/Splash';
+import pembayaran from './pages/pembayaran';
+import kontak from './pages/kontak';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -44,20 +44,20 @@ function MyTabs() {
           }}
         />
         <Tab.Screen
-          name="Register"
-          component={register}
+          name="pembayaran"
+          component={pembayaran}
           options={{
-            tabBarLabel: 'Register',
+            tabBarLabel: 'pembayaran',
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="registered-trademark" color={color} size={size} />
             ),
           }}
         />
         <Tab.Screen
-          name="Splash"
-          component={splash}
+          name="kontak"
+          component={kontak}
           options={{
-            tabBarLabel: 'Splash',
+            tabBarLabel: 'kontak',
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons name="account" color={color} size={size} />
             ),
