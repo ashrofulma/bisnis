@@ -22,7 +22,7 @@ const Beranda = () => {
         text: 'Item 1'
       })}>
         <Image style={styles.image} source={require("../../../gambar/5622723_88ffde35-05b0-49a7-9ba9-284fcad4ab3c_2048_2048.jpg")} />
-        <Text style={styles.imageText}>Item 1</Text>
+        <Text style={styles.imageText}>VIVO</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 2,
@@ -30,7 +30,7 @@ const Beranda = () => {
         text: 'Item 2'
       })}>
         <Image style={styles.image} source={require("../../../gambar/iphone_11_pro.jpg")} />
-        <Text style={styles.imageText}>Item 2</Text>
+        <Text style={styles.imageText}>IPONE</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 3,
@@ -38,7 +38,7 @@ const Beranda = () => {
         text: 'Item 3'
       })}>
         <Image style={styles.image} source={require("../../../gambar/main-list-image-c0207bb7-ddab-4921-947f-c3975d1231e2-3.jpg")} />
-        <Text style={styles.imageText}>Item 3</Text>
+        <Text style={styles.imageText}>IPONE</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 4,
@@ -46,7 +46,7 @@ const Beranda = () => {
         text: 'Item 4'
       })}>
         <Image style={styles.image} source={require("../../../gambar/Infinix-Hot-40-Pro.jpg")} />
-        <Text style={styles.imageText}>Item 4</Text>
+        <Text style={styles.imageText}>INFINIK</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 5,
@@ -54,7 +54,7 @@ const Beranda = () => {
         text: 'Item 5'
       })}>
         <Image style={styles.image} source={require("../../../gambar/HP.jpg")} />
-        <Text style={styles.imageText}>Item 5</Text>
+        <Text style={styles.imageText}>SAMSUNG</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 6,
@@ -62,7 +62,7 @@ const Beranda = () => {
         text: 'Item 6'
       })}>
         <Image style={styles.image} source={require("../../../gambar/Galaxy-A20.jpg")} />
-        <Text style={styles.imageText}>Item 6</Text>
+        <Text style={styles.imageText}>SAMSUNG</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 7,
@@ -70,7 +70,7 @@ const Beranda = () => {
         text: 'Item 7'
       })}>
         <Image style={styles.image} source={require("../../../gambar/merek.jpg")} />
-        <Text style={styles.imageText}>Item 7</Text>
+        <Text style={styles.imageText}>REDMI</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 8,
@@ -78,7 +78,7 @@ const Beranda = () => {
         text: 'Item 8'
       })}>
         <Image style={styles.image} source={require("../../../gambar/note.jpg")} />
-        <Text style={styles.imageText}>Item 8</Text>
+        <Text style={styles.imageText}>REDMI</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 9,
@@ -86,7 +86,7 @@ const Beranda = () => {
         text: 'Item 9'
       })}>
         <Image style={styles.image} source={require("../../../gambar/poto.jpg")} />
-        <Text style={styles.imageText}>Item 9</Text>
+        <Text style={styles.imageText}>REDMI</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 10,
@@ -94,7 +94,7 @@ const Beranda = () => {
         text: 'Item 10'
       })}>
         <Image style={styles.image} source={require("../../../gambar/Redmi-NOte-8.jpg")} />
-        <Text style={styles.imageText}>Item 10</Text>
+        <Text style={styles.imageText}>REDMI</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 11,
@@ -102,7 +102,7 @@ const Beranda = () => {
         text: 'Item 11'
       })}>
         <Image style={styles.image} source={require("../../../gambar/samsung.jpg")} />
-        <Text style={styles.imageText}>Item 11</Text>
+        <Text style={styles.imageText}>SAMSUNG</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.imageContainer} onPress={() => handlePress({
         id: 12,
@@ -110,7 +110,7 @@ const Beranda = () => {
         text: 'Item 12'
       })}>
         <Image style={styles.image} source={require("../../../gambar/Xiaomi.jpg")} />
-        <Text style={styles.imageText}>Item 12</Text>
+        <Text style={styles.imageText}>REDMI</Text>
       </TouchableOpacity>
 
       <Text style={styles.indexText}>Index</Text>
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     width: '45%',
     marginVertical: 10,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     borderRadius: 10,
     overflow: 'hidden',
     shadowColor: '#000',
@@ -172,11 +172,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'black',
   },
   modalContainer: {
     width: '80%',
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     borderRadius: 10,
     padding: 20,
     alignItems: 'center',
