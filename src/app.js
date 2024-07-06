@@ -5,8 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import Beranda from './pages/Beranda';
 import login from './pages/Login';
+import Beranda from './pages/Beranda';
 import pembayaran from './pages/pembayaran';
 import kontak from './pages/kontak';
 

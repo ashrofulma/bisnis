@@ -1,7 +1,37 @@
-import { Image, ScrollView, StyleSheet, Text, View, TouchableOpacity, Modal } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View, TouchableOpacity, Modal, TextInput, Button } from 'react-native';
 import React, { useState } from 'react';
 
+const Login = ({ onLogin }) => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = () => {
+    onLogin();
+  };
+
+  return (
+    <View style={styles.loginContainer}>
+      <Text style={styles.loginTitle}>Login</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Username"
+        value={username}
+        onChangeText={setUsername}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Password"
+        value={password}
+        onChangeText={setPassword}
+        secureTextEntry
+      />
+      <Button title="Login" onPress={handleLogin} />
+    </View>
+  );
+};
+
 const Beranda = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
 
@@ -13,6 +43,14 @@ const Beranda = () => {
   const handleCloseModal = () => {
     setModalVisible(false);
   };
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  if (!isLoggedIn) {
+    return <Login onLogin={handleLogin} />;
+  }
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -133,12 +171,31 @@ const Beranda = () => {
         </View>
       </Modal>
     </ScrollView>
-  )
-}
+  );
+};
 
 export default Beranda;
 
 const styles = StyleSheet.create({
+  loginContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+    backgroundColor: '#fff',
+  },
+  loginTitle: {
+    fontSize: 24,
+    marginBottom: 20,
+  },
+  input: {
+    width: '80%',
+    padding: 10,
+    marginVertical: 10,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 5,
+  },
   container: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -183,24 +240,17 @@ const styles = StyleSheet.create({
   },
   modalImage: {
     width: '100%',
-    height: 300,
-    resizeMode: 'contain',
+    height: 150,
+    resizeMode: 'cover',
   },
   closeButton: {
     marginTop: 20,
     padding: 10,
-    backgroundColor: '#2196F3',
+    backgroundColor: '#007bff',
     borderRadius: 5,
   },
   closeButtonText: {
     color: '#fff',
-    fontSize: 16,
-  },
-  indexText: {
-    width: '100%',
-    textAlign: 'center',
-    padding: 20,
-    fontSize: 18,
     fontWeight: 'bold',
-  }
+  },
 });

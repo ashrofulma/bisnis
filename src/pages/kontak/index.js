@@ -9,7 +9,7 @@ const Kontak = () => {
       </View>
       <View style={styles.profileContainer}>
         <Image
-          source={{ uri: '../../../gambar/samsung.jpg' }} // Replace with actual image URI
+          source={{ uri: '../../../gambar/foto pp.jpg' }} // Replace with actual image URI
           style={styles.profileImage}
         />
         <TouchableOpacity style={styles.cameraIconContainer}>
