@@ -33,16 +33,7 @@ function MyTabs() {
             ),
           }}
         />
-        <Tab.Screen
-          name="Login"
-          component={login}
-          options={{
-            tabBarLabel: 'Login',
-            tabBarIcon: ({ color, size }) => (
-              <MaterialCommunityIcons name="login" color={color} size={size} />
-            ),
-          }}
-        />
+
         <Tab.Screen
           name="pembayaran"
           component={pembayaran}
