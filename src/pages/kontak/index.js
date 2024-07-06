@@ -9,7 +9,7 @@ const Kontak = () => {
       </View>
       <View style={styles.profileContainer}>
         <Image
-          source={{ uri: 'https://example.com/profile-pic.jpg' }} // Replace with actual image URI
+          source={{ uri: '../../../gambar/samsung.jpg' }} // Replace with actual image URI
           style={styles.profileImage}
         />
         <TouchableOpacity style={styles.cameraIconContainer}>
@@ -22,7 +22,7 @@ const Kontak = () => {
       <View style={styles.infoContainer}>
         <View style={styles.infoRow}>
           <Text style={styles.label}>Nama</Text>
-          <TextInput style={styles.infoText} value="ashrof" editable={false} />
+          <TextInput style={styles.infoText} value="ASHROF" editable={false} />
           <TouchableOpacity style={styles.editIconContainer}>
             <Image
               source={{ uri: 'https://example.com/edit-icon.png' }} // Replace with actual icon URI
@@ -33,7 +33,7 @@ const Kontak = () => {
         <Text style={styles.subText}>Silahkan Hubungi Nomer Ini</Text>
         <View style={styles.infoRow}>
           <Text style={styles.label}>Info</Text>
-          <TextInput style={styles.infoText} value="." editable={false} />
+          <TextInput style={styles.infoText} value="TERIMAKASIH" editable={false} />
           <TouchableOpacity style={styles.editIconContainer}>
             <Image
               source={{ uri: 'https://example.com/edit-icon.png' }} // Replace with actual icon URI
