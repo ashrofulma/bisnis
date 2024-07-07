@@ -57,17 +57,18 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#fff',
   },
   modalView: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)', // darken the background to highlight the image
+    padding: 20,
   },
   modalImage: {
     width: '90%',
-    height: '70%',
+    height: '90%',
     resizeMode: 'contain',
   }
 })

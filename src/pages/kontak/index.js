@@ -1,7 +1,11 @@
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 
 const Kontak = () => {
+  const [isEditingName, setIsEditingName] = useState(false);
+  const [isEditingInfo, setIsEditingInfo] = useState(false);
+  const [isEditingPhone, setIsEditingPhone] = useState(false);
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -22,8 +26,15 @@ const Kontak = () => {
       <View style={styles.infoContainer}>
         <View style={styles.infoRow}>
           <Text style={styles.label}>Nama</Text>
-          <TextInput style={styles.infoText} value="ASHROF" editable={false} />
-          <TouchableOpacity style={styles.editIconContainer}>
+          <TextInput
+            style={styles.infoText}
+            value="ASHROF"
+            editable={isEditingName}
+          />
+          <TouchableOpacity
+            style={styles.editIconContainer}
+            onPress={() => setIsEditingName(!isEditingName)}
+          >
             <Image
               source={{ uri: 'https://example.com/edit-icon.png' }} // Replace with actual icon URI
               style={styles.editIcon}
@@ -33,8 +44,15 @@ const Kontak = () => {
         <Text style={styles.subText}>Silahkan Hubungi Nomer Ini</Text>
         <View style={styles.infoRow}>
           <Text style={styles.label}>Info</Text>
-          <TextInput style={styles.infoText} value="TERIMAKASIH" editable={false} />
-          <TouchableOpacity style={styles.editIconContainer}>
+          <TextInput
+            style={styles.infoText}
+            value="TERIMAKASIH"
+            editable={isEditingInfo}
+          />
+          <TouchableOpacity
+            style={styles.editIconContainer}
+            onPress={() => setIsEditingInfo(!isEditingInfo)}
+          >
             <Image
               source={{ uri: 'https://example.com/edit-icon.png' }} // Replace with actual icon URI
               style={styles.editIcon}
@@ -43,8 +61,15 @@ const Kontak = () => {
         </View>
         <View style={styles.infoRow}>
           <Text style={styles.label}>Telepon</Text>
-          <TextInput style={styles.infoText} value="+62 815-1534-9169" editable={false} />
-          <TouchableOpacity style={styles.editIconContainer}>
+          <TextInput
+            style={styles.infoText}
+            value="+62 815-1534-9169"
+            editable={isEditingPhone}
+          />
+          <TouchableOpacity
+            style={styles.editIconContainer}
+            onPress={() => setIsEditingPhone(!isEditingPhone)}
+          >
             <Image
               source={{ uri: 'https://example.com/edit-icon.png' }} // Replace with actual icon URI
               style={styles.editIcon}
